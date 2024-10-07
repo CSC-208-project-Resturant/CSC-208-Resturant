@@ -64,3 +64,31 @@ ScrollReveal().reveal(".about__section", {
   origin: "top",
   delay: 1000,
 });
+
+
+ScrollReveal().reveal(".im", {
+  ...scrollRevealOption,
+  origin: "left",
+  delay: 1000,
+});
+ScrollReveal().reveal(".ti", {
+  ...scrollRevealOption,
+  origin: "right",
+  delay: 1000,
+});
+ScrollReveal().reveal(".section__container2 h1", {
+  ...scrollRevealOption,
+  origin: "bottom",
+  delay: 2000,
+});
+
+ScrollReveal().reveal(".menu__container h1", {
+  ...scrollRevealOption,
+  origin: "bottom",
+  delay: 2000,
+});
+ScrollReveal().reveal(".menu__item", {
+  ...scrollRevealOption,
+  origin: "left",
+  delay: 1000,
+});
