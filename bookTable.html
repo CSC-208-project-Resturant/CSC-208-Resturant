@@ -1,0 +1,57 @@
+
+
+  <!-- Opening Time Section -->
+  <section class="opening-times">
+    <div class="opening-hours">
+      <h2>Opening Time Hours</h2>
+      <p>Monday - Friday: 7:00 am - 10:00 pm</p>
+      <p>Saturday: 8:00 am - 12:00 pm</p>
+      <p>Sunday: 6:30 pm - 10:00 pm</p>
+    </div>
+    <div class="book-table">
+      <h2>Book A Table</h2>
+      <form action="">
+        <input type="text" placeholder="Name" required>
+        <input type="tel" placeholder="Phone" required>
+        <input type="time" placeholder="Arrival Time" required>
+        <input type="number" placeholder="Amount of People" required>
+        <button type="submit">Book A Table</button>
+      </form>
+    </div>
+  </section>
+
+
+
+
+  /* Opening Time Section */
+  .opening-times {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+  }
+  
+  .opening-hours,
+  .book-table {
+    width: 45%;
+  }
+  
+  .book-table form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .book-table input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+  }
+  
+  .book-table button {
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+  }

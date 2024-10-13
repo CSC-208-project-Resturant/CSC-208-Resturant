@@ -17,6 +17,8 @@
     box-sizing: border-box;
 }
 
+/* STYLE FOR HOME PAGE */
+
 .section__container {
     max-width: var(--max-width);
     margin: auto;
@@ -53,10 +55,10 @@ body {
 }
 
 .header {
-    background-image: url("images/header-bg.png");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background: url(images/header-bg.png);
 }
 
 nav {
@@ -72,7 +74,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--primary-color);
+    background-color: #FFC72C;
 }
 
 .nav__logo img {
@@ -104,7 +106,7 @@ nav {
     justify-content: center;
     flex-direction: column;
     gap: 2rem;
-    background-color: var(--primary-color);
+    background-color: #FFC72C;
     transition: 0.5s;
     z-index: -1;
     transform: translateY(-100%);
@@ -133,7 +135,7 @@ nav {
 
 .te {
     color: var(--white);
-    font-family: "Montez", cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
     font-style: normal;
     margin-left: 5px;
@@ -151,6 +153,7 @@ nav {
     display: grid;
     gap: 2rem;
     overflow: hidden;
+    
 }
 
 .header__image img{
@@ -183,6 +186,11 @@ nav {
     outline: none;
     box-shadow: 4px 4px #000;
   }
+
+  /* .btn:hover{
+    transform: scaleX(1.5);
+    transition: 2s;
+  } */
 
   .it{
     color: var(--white);
@@ -261,6 +269,11 @@ nav {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
+
+  .special__item:hover{
+    transform: scale(1.1);
+    transition: 2s;
+  }
   
   .special__item img {
     border-radius: 10px;
@@ -283,36 +296,154 @@ nav {
   
 
   /* Footer */
+
+/* Footer Styling */
 .footer {
-    background-color: #42200b;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
+  background-color: #222;
+  color: #fff;
+  padding: 40px;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
 
+/* Footer sections flex layout */
+.section__footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 
-  /* Contact Section */
+/* About Us Section */
+.footer__about {
+  flex: 1;
+  margin-right: 30px;
+}
+
+.footer__about h2 {
+  color: #ffcc00;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.footer__about p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Social Media Icons */
+.social-media {
+  margin-top: 20px;
+}
+
+.social-media h2 {
+  color: #ffcc00;
+}
+
+.social-media a {
+  color: #fff;
+  margin-right: 10px;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #ffcc00;
+}
+
+/* Contact Section */
 .contact__section {
-    background-color: #df1c1c;
-    padding: 60px 20px;
-    color: #fff;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  
-  .contact__section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  
-  .contact__info p {
-    font-size: 1.2rem;
-    margin: 10px 0;
-  }
-  
-  .contact__info i {
-    margin-right: 10px;
-  }
+  flex: 1;
+  margin-right: 30px;
+}
+
+.contact__section h2 {
+  color: #ffcc00;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact__info p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Subscription Section */
+.SUb {
+  flex: 1;
+}
+
+.news {
+  margin-top: 20px;
+}
+
+.news .write {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.email {
+  padding: 10px;
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+.E-btn {
+  padding: 10px 20px;
+  background-color: #ffcc00;
+  border: none;
+  color: #222;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.E-btn:hover {
+  background-color: #e6b800;
+}
+
+/* Footer Navigation - Vertical Layout */
+.footer-nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-nav ul li {
+  margin-bottom: 10px;
+}
+
+.footer-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.footer-nav ul li a:hover {
+  color: #ffcc00;
+}
+
+/* Footer Copyright */
+.footer p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* Flexbox & Animation */
+.section__footer {
+  display: flex;
+  gap: 20px;
+
+}
+
+
+
+
+
+
+
 
   
   .section__container2 {
@@ -368,14 +499,27 @@ nav {
  /* Menu Section */
  .menu__container {
   background-color: #fff;
-  padding: 60px 20px;
+  /* padding: 60px 20px; */
 }
+
+.btn-design{
+  margin: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+
 
 .menu__content {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 20px;
+  /* width: 80%; */
 }
 
 .menu__item {
@@ -401,13 +545,85 @@ nav {
   font-size: 1.8rem;
   color: var(--primary-color);
 }
+
+
+.menu__item:hover{
+  transform: scale(1.1);
+  transition: 2s;
+}
+
+
 .section__container h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
   color: var(--primary-color);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* STYLE FOR BURGAR WEEK */
+
+.body{
+  background: #f3f3f3;
+  font-family: 'Poppins', sans-serif;
+}
+
+.Bw{
+  padding: 0 10px 30px 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+  grid-gap: 20px 40px ;
+}
+
+.BwH{
+  background-color: var(--tertiary-color);
+  color: var(--white);
+  margin-bottom: 30px;
+  padding: 30px 0;
+  grid-column: 1/-1;
+  text-align: center;
+}
+
+.BwH h1{
+  font-weight: 400;
+  font-size: 32px;
+  letter-spacing: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.BwH h3{
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+.Bug{
+  display: grid;
+  position: relative;
+  grid-template-rows: auto 1fr;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  transition: .2s ease-in-out;
+}
   
+
+
 
 
 @media (width > 768px) {
@@ -458,7 +674,7 @@ nav {
 
     .log{
       
-        margin-left: 250px;
+        margin-left: 175px;
     }
 
     .header__container {
@@ -481,7 +697,184 @@ nav {
       }
 
 
+
+
+
+
+      /* Footer Styling */
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 40px;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Footer sections flex layout */
+.section__footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* About Us Section */
+.footer__about {
+  flex: 1;
+  margin-right: 30px;
+  /* align-items: center;
+  text-align: center; */
+}
+
+.footer__about h2 {
+  color: #ffcc00;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.footer__about p {
+  font-size: 16px;
+  line-height: 1.6;
+  align-items: left;
+  text-align: left;
+}
+
+/* Social Media Icons */
+.social-media {
+  margin-top: 10px;
+  font-size: 50px;
+}
+
+.social-media h2 {
+  color: #ffcc00;
+}
+
+.social-media a {
+  color: #fff;
+  margin-right: 10px;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #ffcc00;
+}
+
+.social-media a:active{
+  background-color: #6e5008;
+}
+
+/* Contact Section */
+.Open {
+  flex: 1;
+  margin-right: 30px;
+}
+
+.OPen h2 {
+  color: #ffcc00;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.contact__info p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.contact__info span{
+  margin-left: 60px;
+}
+
+/* Subscription Section */
+.SUb {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.SUb h2{
+  color: #ffcc00;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.news {
+  margin-top: 20px;
+}
+
+.news .write {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.email {
+  padding: 10px;
+  width: 80%;
+  margin-bottom: 10px;
+  outline: none;
+  border: none;
+}
+
+.E-btn {
+  padding: 10px 20px;
+  font-family: var(--primary-color);
+  font-weight: bold;
+  background-color: #ffcc00;
+  border: none;
+  color: #222;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 2px 2px #ffffffb7;
+  transition: background-color 0.3s ease;
+}
+
+.E-btn:hover {
+  background-color: #e6b800;
+}
+
+.E-btn:active{
+  background-color: #6e5008;
+}
+
+
+
+/* Footer Copyright */
+.fot {
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px; 
+}
+
+/* Flexbox & Animation */
+.section__footer {
+  display: flex;
+  gap: 20px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
     
     
 
 }
+
+
+
+
+
+
+
+
+

@@ -17,29 +17,32 @@ navLinks.addEventListener("click", (e) => {
 const scrollRevealOption = {
   distance: "50px",
   origin: "bottom",
-  duration: 3000,
+  duration: 2000,
 };
 
 ScrollReveal().reveal(".header__image img", {
   ...scrollRevealOption,
   origin: "left",
-  delay: 4000,
+  delay: 2500,
 });
 ScrollReveal().reveal(".header__content h2", {
   ...scrollRevealOption,
-  delay: 3000,
+  origin: "bottom",
+  delay: 2000,
 });
 ScrollReveal().reveal(".header__content h1", {
   ...scrollRevealOption,
-  delay: 1000,
+  origin: "left",
+  delay: 1500,
 });
 ScrollReveal().reveal(".header__content span", {
   ...scrollRevealOption,
-  delay: 2500,
+  origin: "right",
+  delay: 1000,
 });
 ScrollReveal().reveal(".header__content button", {
   ...scrollRevealOption,
-  delay: 2000,
+  delay: 1000,
 });
 
 ScrollReveal().reveal(".special__container h1", {
@@ -47,7 +50,7 @@ ScrollReveal().reveal(".special__container h1", {
   origin: "top",
   delay: 1000,
 });
-ScrollReveal().reveal(".special__item", {
+ScrollReveal().reveal(".special__content", {
   ...scrollRevealOption,
   origin: "right",
   delay: 1000,
@@ -87,8 +90,34 @@ ScrollReveal().reveal(".menu__container h1", {
   origin: "bottom",
   delay: 2000,
 });
-ScrollReveal().reveal(".menu__item", {
+ScrollReveal().reveal(".menu__content", {
   ...scrollRevealOption,
   origin: "left",
   delay: 1000,
+});
+ScrollReveal().reveal(".menu__container button", {
+  ...scrollRevealOption,
+  origin: "right",
+  delay: 1000,
+});
+
+ScrollReveal().reveal(".footer", {
+  ...scrollRevealOption,
+  origin: "top",
+  delay: 1500,
+});
+ScrollReveal().reveal(".footer__about", {
+  ...scrollRevealOption,
+  origin: "left",
+  delay: 2000,
+});
+ScrollReveal().reveal(".OPen", {
+  ...scrollRevealOption,
+  origin: "bottom",
+  delay: 2250,
+});
+ScrollReveal().reveal(".SUb", {
+  ...scrollRevealOption,
+  origin: "right",
+  delay: 2500,
 });
