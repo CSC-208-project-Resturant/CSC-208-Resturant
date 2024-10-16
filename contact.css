@@ -213,6 +213,118 @@ ul {
 
 
 
+/* Contact Section Styles */
+.contact__section {
+  display: flex; /* Enable flexbox layout */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center align items */
+  justify-content: center; /* Center content vertically */
+  background-color: #f4f4f4;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.contact__section > div {
+  margin-bottom: 30px; /* Space between header and contact info */
+}
+
+.contact__section h2 {
+  color: #0073e6;
+  margin-bottom: 10px;
+}
+
+.contact__info {
+  margin-bottom: 30px;
+}
+
+.contact__info p {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.contact__info i {
+  color: #0073e6;
+  margin-right: 10px;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* Make sure the form takes the full width */
+}
+
+.form-row {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form-row input,
+.form-row textarea {
+  width: 100%; /* Use full width */
+  max-width: 500px; /* Set a max width */
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-row textarea {
+  height: 100px;
+  resize: none; /* Prevents resizing */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #0073e6;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  max-width: 200px; /* Set a max width */
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+.social__links {
+  margin-top: 30px;
+}
+
+.social__links h3 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #0073e6;
+}
+
+.social__links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social__links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.social__links a {
+  color: #0073e6;
+  font-size: 1.5rem; /* Adjust icon size */
+  transition: color 0.3s ease;
+}
+
+.social__links a:hover {
+  color: #005bb5;
+}
+
+
 @media (width > 768px) {
     nav {
       position: static;
