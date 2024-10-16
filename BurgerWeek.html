@@ -3,57 +3,231 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="BurgerWeek.Css"> -->
+    <link rel="stylesheet" href="BurgerWeek.Css">
     <title>BURGER WEEK</title>
 </head>
-<body class="body">
-    <header class="header">
-        <nav>
-          <div class="nav-header">
-            <div class="nav__logo">
-              <a href="#">
-                <img src="images/logo.jpg" alt="logo" class="nav__logo-dark" />
-                <div class="sol">
-                  <img src="images/logo2.jpg" alt="logo" class="nav__logo-white" /> <span class="te">Joyfull</span>
-                </div>
-              </a>
-            </div>
-            <div class="menuBtn" id="menu-btn">
-              <i class="ri-menu-line"></i>
-            </div>
-          </div>
-          <ul class="navLinks" id="nav-links">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="#about">ABOUT US</a></li>
-            <li><a href="special.html">SPECIAL</a></li>
-            <li><a href="menu.html">MENU</a></li>
-            <li><a href="#contact">CONTACT US</a></li>
-            <li><a href="bookTable.html" class="log">BOOK A TABLE</a></li>
-    
-          </ul>
-        </nav>
-        </header>
+<body>
 
 
-        <div class="Bw">
-            <div class="BwH">
-                <h1>Burger Week</h1>
-                <h3>&mdash;Menu&mdash;</h3>
-            </div class="Bug">
-                <img src="images/pic1.jpg" alt="">
-                <div class="details">
-                    <h5>Burger</h5>
-                    <h5 class="price">$9</h5>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem suscipit rem assumenda similique blanditiis maiores officia quisquam in, architecto incidunt, molestias exercitationem ipsa? Perspiciatis cum amet ad cupiditate, praesentium saepe.</p>
-                <button>Add To Cart</button>
-            <div>
-
+  <header class="header">
+    <nav>
+      <div class="nav-header">
+        <div class="nav__logo">
+          <a href="#">
+            <img src="images/logo.jpg" alt="logo" class="nav__logo-dark" />
+            <div class="sol">
+              <img src="images/logo2.jpg" alt="logo" class="nav__logo-white" /> <span class="te">Joyfull</span>
             </div>
+          </a>
         </div>
+        <div class="menuBtn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="navLinks" id="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="About.html">ABOUT US</a></li>
+        <li><a href="special.html">SPECIAL</a></li>
+        <li><a href="menu.html">MENU</a></li>
+        <li><a href="Contact.html">CONTACT US</a></li>
+        <li><a href="bookTable.html" class="log">BOOK A TABLE</a></li>
+
+      </ul>
+    </nav>
 
 
-        <script src="app.js"></script>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>BURGER WEEK</h1>
+  </section>
+  </header>
+
+
+
+ <!-- Burger Menu Section -->
+<section class="burger-menu">
+  <h2 class="section__header">Our Burger Menu</h2>
+  
+  <div class="menu-items">
+    <div class="menu-item">
+      <img src="images/bur-1.jpeg" alt="Classic Cheeseburger">
+      <div class="item-details">
+        <div class="item-name">Classic Cheeseburger</div>
+        <div class="item-price">&#8358;2,500</div>
+        <p class="item-description">A simple yet satisfying burger with a beef patty, cheese, lettuce, tomato, onion, pickles, and mayonnaise.</p>
+        <button class="order-btn">Order Now</button>
+      </div>
+    </div>
+    
+    <div class="menu-item">
+      <img src="images/bur-2.jpg" alt="Double Cheeseburger">
+      <div class="item-details">
+        <div class="item-name">Double Cheeseburgerer</div>
+        <div class="item-price">&#8358;3,500</div>
+        <p class="item-description">A larger version of the classic cheeseburger with two beef patties and double the cheese.</p>
+        <button class="order-btn">Order Now</button>
+      </div>
+    </div>
+    
+    <div class="menu-item">
+      <img src="images/bur-3.jpeg" alt="Bacon Cheeseburger">
+      <div class="item-details">
+        <div class="item-name">Bacon Cheeseburger</div>
+        <div class="item-price">&#8358;4,000</div>
+        <p class="item-description">A classic cheeseburger with crispy bacon added for extra flavor and protein.</p>
+        <button class="order-btn">Order Now</button>
+      </div>
+    </div>
+    
+    <div class="menu-item">
+      <img src="images/bur-4.jpeg" alt="Mushroom Swiss Burger">
+      <div class="item-details">
+        <div class="item-name">Mushroom Swiss Burger</div>
+        <div class="item-price">&#8358;4,500</div>
+        <p class="item-description">A gourmet burger with sautéed mushrooms and Swiss cheese.</p>
+        <button class="order-btn">Order Now</button>
+      </div>
+    </div>
+    
+    <div class="menu-item">
+      <img src="images/bur-5.jpeg" alt="Spicy Jalapeno Burger">
+      <div class="item-details">
+        <div class="item-name">Spicy Jalapeno Burger</div>
+        <div class="item-price">&#8358;4,000</div>
+        <p class="item-description">A fiery burger with jalapeno peppers and a spicy sauce.</p>
+        <button class="order-btn">Order Now</button>
+      </div>
+    </div>
+    
+    <div class="menu-item">
+      <img src="images/bur-6.jpeg" alt="Avocado Burgerr">
+      <div class="item-details">
+        <div class="item-name">Avocado Burger</div>
+        <div class="item-price">&#8358;5,000</div>
+        <p class="item-description">A healthy and delicious burger with avocado slices, lettuce, and tomato.</p>
+        <button class="order-btn">Order Now</button>
+      </div>
+    </div>
+    
+    <div class="menu-item">
+      <img src="images/bur-7.jpeg" alt="Chicken Burger">
+      <div class="item-details">
+        <div class="item-name">Chicken Burger</div>
+        <div class="item-price">&#8358;2,500</div>
+        <p class="item-description">A lighter option with a grilled chicken patty, lettuce, tomato, onion, and mayonnaise.</p>
+        <button class="order-btn">Order Now</button>
+      </div>
+    </div>
+    
+    <div class="menu-item">
+      <img src="images/bur-8.jpeg" alt="Fish Burger">
+      <div class="item-details">
+        <div class="item-name">Fish Burger</div>
+        <div class="item-price">&#8358;3,000</div>
+        <p class="item-description">A seafood-lover's delight with a fried fish patty, lettuce, tomato, and tartar sauce.</p>
+        <button class="order-btn">Order Now</button>
+      </div>
+    </div>
+    
+    <div class="menu-item">
+      <img src="images/bur-9.jpeg" alt="Vegan Burger">
+      <div class="item-details">
+        <div class="item-name">Vegan Burger</div>
+        <div class="item-price">&#8358;4,000</div>
+        <p class="item-description">A plant-based burger made with beans, lentils, or other vegetables..</p>
+        <button class="order-btn">Order Now</button>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/bur-10.jpeg" alt="Lamb Burger">
+      <div class="item-details">
+        <div class="item-name">Lamb Burger</div>
+        <div class="item-price">&#8358;5,000</div>
+        <p class="item-description">A unique and flavorful burger with a lamb patty, grilled onions, and mint sauce.</p>
+        <button class="order-btn">Order Now</button>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/bur-11.jpeg" alt="Steakhouse Burger">
+      <div class="item-details">
+        <div class="item-name">Steakhouse Burger</div>
+        <div class="item-price">&#8358;6,000</div>
+        <p class="item-description">A premium burger with a thick, juicy beef patty, grilled onions, mushrooms, and cheese.</p>
+        <button class="order-btn">Order Now</button>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/bur-12.jpeg" alt="Slider">
+      <div class="item-details">
+        <div class="item-name">Slider</div>
+        <div class="item-price">&#8358;2,500</div>
+        <p class="item-description">A miniature version of a burger, perfect for sharing or as a snack.</p>
+        <button class="order-btn">Order Now</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+  <footer class="footer">
+    <!-- About Us Section in Footer -->
+    <section class="section__footer">
+      <div class="footer__about">
+        <h2>Joyfull</h2>
+        <p>Welcome to Joyfull Where our foods are filled with the freshest ingredients. 
+          Experience the flavors that have been cherished for generations,
+          Join us for a meal that's not just delicious, but a true feast for the senses</p>
+          
+          <!-- Social Media Icons -->
+        <div class="social-media"> 
+          <a href="#"><i class="ri-whatsapp-fill"></i></a>
+          <a href="#"><i class="ri-facebook-fill"></i></a>
+          <a href="#"><i class="ri-twitter-fill"></i></a>
+          <a href="#"><i class="ri-instagram-fill"></i></a>
+          <a href="#"><i class="ri-youtube-fill"></i></a>
+
+         
+        </div>
+      </div>
+      </div>
+  
+      <!-- Opening Days -->
+      <div class="OPen">
+        <h2>Opening Hours</h2>
+        <div class="contact__info">
+          <p class="day">Monday<span class="time">9:00 - 24:00</span></p>
+          <p class="day">Tuesday<span class="time">9:00 - 24:00</span></p>
+          <p class="day">Wednesday<span class="time">9:00 - 24:00</span></p>
+          <p class="day">Thursday<span class="time">9:00 - 24:00</span></p>
+          <p class="day">Friday<span class="time">9:00 - 24:00</span></p>
+          <p class="day">Saturday<span class="time">9:00 - 24:00</span></p>
+        </div>
+      </div>
+
+
+      <div class="SUb">
+        <h2>Newletter</h2>
+        <div class="news">
+          <h3 class="write">Want Upadate? Subscribe to our newsletter</h3>
+          <input type="email" class="email" placeholder="Enter email"><br>
+          <button class="E-btn">Submit</button>
+        </div>
+      </div>
+
+  
+  
+   
+    
+  </section> 
+  <p class="fot">&copy; 2024 Joyfull Restaurant | Group 1 Even</p>
+  </footer>
+
 </body>
 </html>

@@ -1,57 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bookTable.css">
+  <title>BOOK A TABLE</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <nav>
+      <div class="nav-header">
+        <div class="nav__logo">
+          <a href="#">
+            <img src="images/logo.jpg" alt="logo" class="nav__logo-dark" />
+            <div class="sol">
+              <img src="images/logo2.jpg" alt="logo" class="nav__logo-white" /> <span class="te">Joyfull</span>
+            </div>
+          </a>
+        </div>
+        <div class="menuBtn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="navLinks" id="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="About.html">ABOUT US</a></li>
+        <li><a href="special.html">SPECIAL</a></li>
+        <li><a href="menu.html">MENU</a></li>
+        <li><a href="Contact.html">CONTACT US</a></li>
+        <li><a href="bookTable.html" class="log">BOOK A TABLE</a></li>
+
+      </ul>
+    </nav>
+
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>BOOK A TABLE</h1>
+    </section>
+  </header>
+
 
 
   <!-- Opening Time Section -->
-  <section class="opening-times">
-    <div class="opening-hours">
-      <h2>Opening Time Hours</h2>
-      <p>Monday - Friday: 7:00 am - 10:00 pm</p>
-      <p>Saturday: 8:00 am - 12:00 pm</p>
-      <p>Sunday: 6:30 pm - 10:00 pm</p>
+  <section class="section__Book">
+    <h2>BOOK YOUR TABLE NOW</h2>
+    <div class="banner">
+    
+    <div class="card-container">
+      <div class="card-img">
+        <img src="images/bg_-2.jpg" alt="">
+
+        <div class="img-text">
+          <div>
+          <img src="images/logo2.jpg" alt="logo">
+        </div>
+        <div>
+          <h1>Joyfull</h1>
+        </div>
+        </div>
+      </div>
+
+      <div class="card-content">
+        <h3>Reservation</h3>
+        <form>
+          <div class="form-row">
+            <select name="days">
+              <option value="day-select">Select Day</option>
+              <option value="sunday">Sunday</option>
+              <option value="monday">Monday</option>
+              <option value="tuesday">Tuesday</option>
+              <option value="wednesday">Wednesday</option>
+              <option value="thursday">Thursday</option>
+              <option value="friday">Friday</option>
+              <option value="saturday">Saturday</option>
+            </select>
+
+            <select name="hours">
+              <option value="hour-select">Select Hour</option>
+              <option value="10">10: 00</option>
+              <option value="10">12: 00</option>
+              <option value="10">14: 00</option>
+              <option value="10">16: 00</option>
+              <option value="10">18: 00</option>
+              <option value="10">20: 00</option>
+              <option value="10">22: 00</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <input type="text" placeholder="Full Name">
+            <input type="text" placeholder="Phone Number">
+          </div>
+
+          <div class="form-row">
+            <input type="number" placeholder="How Many Persons?" min="1">
+            <input type="email" placeholder="Emall">
+          </div>
+          <button>BOOK TABLE</button>
+        </form>
+      </div>
     </div>
-    <div class="book-table">
-      <h2>Book A Table</h2>
-      <form action="">
-        <input type="text" placeholder="Name" required>
-        <input type="tel" placeholder="Phone" required>
-        <input type="time" placeholder="Arrival Time" required>
-        <input type="number" placeholder="Amount of People" required>
-        <button type="submit">Book A Table</button>
-      </form>
-    </div>
-  </section>
+  </div>
+    </section>
+
+
+    <footer class="footer">
+      <!-- About Us Section in Footer -->
+      <section class="section__footer">
+        <div class="footer__about">
+          <h2>Joyfull</h2>
+          <p>Welcome to Joyfull Where our foods are filled with the freshest ingredients.
+            Experience the flavors that have been cherished for generations,
+            Join us for a meal that's not just delicious, but a true feast for the senses</p>
+
+          <!-- Social Media Icons -->
+          <div class="social-media">
+            <a href="#"><i class="ri-whatsapp-fill"></i></a>
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+
+
+          </div>
+        </div>
+        </div>
+
+        <!-- Opening Days -->
+        <div class="OPen">
+          <h2>Opening Hours</h2>
+          <div class="contact__info">
+            <p class="day">Monday<span class="time">9:00 - 24:00</span></p>
+            <p class="day">Tuesday<span class="time">9:00 - 24:00</span></p>
+            <p class="day">Wednesday<span class="time">9:00 - 24:00</span></p>
+            <p class="day">Thursday<span class="time">9:00 - 24:00</span></p>
+            <p class="day">Friday<span class="time">9:00 - 24:00</span></p>
+            <p class="day">Saturday<span class="time">9:00 - 24:00</span></p>
+          </div>
+        </div>
+
+
+        <div class="SUb">
+          <h2>Newletter</h2>
+          <div class="news">
+            <h3 class="write">Want Upadate? Subscribe to our newsletter</h3>
+            <input type="email" class="email" placeholder="Enter email"><br>
+            <button class="E-btn">Submit</button>
+          </div>
+        </div>
 
 
 
 
-  /* Opening Time Section */
-  .opening-times {
-    display: flex;
-    justify-content: space-between;
-    padding: 50px 20px;
-    background-color: #f8f8f8;
-  }
-  
-  .opening-hours,
-  .book-table {
-    width: 45%;
-  }
-  
-  .book-table form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .book-table input {
-    padding: 10px;
-    border: 1px solid #ddd;
-    font-size: 16px;
-  }
-  
-  .book-table button {
-    padding: 15px;
-    background-color: #333;
-    color: #fff;
-    cursor: pointer;
-    border: none;
-  }
+
+      </section>
+      <p class="fot">&copy; 2024 Joyfull Restaurant | Group 1 Even</p>
+    </footer>
+
+</body>
+
+</html>
